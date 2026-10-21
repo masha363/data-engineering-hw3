@@ -3,7 +3,8 @@
 **Вариант 10 — Аналитики** (IT-профроли hh.ru: Аналитик, Системный, Бизнес-, BI-/аналитик данных, Продуктовый).
 Голубева Мария Сергеевна, J3313.
 
-📄 Отчёт: [`report/report.pdf`](report/report.pdf)
+📄 Отчёт: [`report/report.pdf`](report/report.pdf)  
+🔗 Репозиторий: https://github.com/masha363/data-engineering-hw3
 
 ## Структура
 | файл | этап |
