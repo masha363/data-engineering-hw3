@@ -1,0 +1,19 @@
+services:
+  rustfs:
+    image: rustfs/rustfs:latest
+    container_name: rustfs
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      RUSTFS_VOLUMES: "/data/rustfs{0...3}"
+      RUSTFS_STORAGE_CLASS_STANDARD: "EC:2"
+      RUSTFS_HEAL_AUTO_HEAL_ENABLE: "false"
+      RUSTFS_UNSAFE_BYPASS_DISK_CHECK: "true"
+      RUSTFS_ACCESS_KEY: "rustfsadmin"
+      RUSTFS_SECRET_KEY: "rustfsadmin"
+    volumes:
+      - ./disks/disk0:/data/rustfs0
+      - ./disks/disk1:/data/rustfs1
+      - ./disks/disk2:/data/rustfs2
+      - ./disks/disk3:/data/rustfs3

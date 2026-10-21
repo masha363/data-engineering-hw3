@@ -1,0 +1,9 @@
+(.venv) golubevamaria@MacBook-Air-Golubeva hw3 % python 01_upload.py
+Endpoint: http://localhost:9000
+Создан бакет hh-lake
+Загружено s3://hh-lake/raw/hh_analysts_2024.csv
+  локальный размер : 284287850 байт, md5 60de9ae1bf0458b1d381aa7588030195
+  размер в S3      : 284287850 байт
+
+Содержимое бакета:
+  raw/hh_analysts_2024.csv                              284287850 байт  2026-10-21 08:09:43

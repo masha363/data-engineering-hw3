@@ -1,0 +1,4 @@
+duckdb>=1.1
+boto3
+psutil
+matplotlib

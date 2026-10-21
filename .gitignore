@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.DS_Store
+# тройки весят >100 МБ (лимит GitHub) — они лежат в бакете hh-lake/results/*/k3_triples.csv
+results/*/k3_triples.csv
+report/report.html
+results/mapreduce_v2/k3_triples/

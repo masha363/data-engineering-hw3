@@ -1,0 +1,47 @@
+Объекты результатов в бакете:
+  s3://hh-lake/results/analysis/regions_t1.csv                 357 байт
+  s3://hh-lake/results/analysis/regions_t2.csv               24300 байт
+  s3://hh-lake/results/analysis/salary_added_effect.csv       4579 байт
+  s3://hh-lake/results/analysis/salary_pair_up.csv           80888 байт
+  s3://hh-lake/results/analysis/salary_triple_up.csv        271044 байт
+  s3://hh-lake/results/duckdb/k1_skills.csv                 309970 байт
+  s3://hh-lake/results/duckdb/k2_pairs.csv                 9656059 байт
+  s3://hh-lake/results/duckdb/k3_triples.csv             104160012 байт
+  s3://hh-lake/results/duckdb/summary.json                     733 байт
+  s3://hh-lake/results/mapreduce/k1_skills.csv              319176 байт
+  s3://hh-lake/results/mapreduce/k2_pairs.csv              9813113 байт
+  s3://hh-lake/results/mapreduce/k3_triples.csv          105270366 байт
+  s3://hh-lake/results/mapreduce/summary.json                  918 байт
+  s3://hh-lake/results/mapreduce/x.txt                           5 байт
+  s3://hh-lake/results/mapreduce_v2/k1_skills/part-00000.csv      77882 байт
+  s3://hh-lake/results/mapreduce_v2/k1_skills/part-00001.csv      79696 байт
+  s3://hh-lake/results/mapreduce_v2/k1_skills/part-00002.csv      79294 байт
+  s3://hh-lake/results/mapreduce_v2/k1_skills/part-00003.csv      82343 байт
+  s3://hh-lake/results/mapreduce_v2/k2_pairs/part-00000.csv    2455552 байт
+  s3://hh-lake/results/mapreduce_v2/k2_pairs/part-00001.csv    2457532 байт
+  s3://hh-lake/results/mapreduce_v2/k2_pairs/part-00002.csv    2455125 байт
+  s3://hh-lake/results/mapreduce_v2/k2_pairs/part-00003.csv    2444967 байт
+  s3://hh-lake/results/mapreduce_v2/k3_triples/part-00000.csv   26271036 байт
+  s3://hh-lake/results/mapreduce_v2/k3_triples/part-00001.csv   26321485 байт
+  s3://hh-lake/results/mapreduce_v2/k3_triples/part-00002.csv   26366906 байт
+  s3://hh-lake/results/mapreduce_v2/k3_triples/part-00003.csv   26311026 байт
+  s3://hh-lake/results/mapreduce_v2/summary.json               946 байт
+
+контрольное число                mapreduce        duckdb  совпало
+rows_in_object                       73522         73522  да
+variant_vacancies                    54607         54607  да
+with_skills                          33662         33662  да
+навыки уникальных                     9219          9219  да
+навыки вхождений                    231229        231229  да
+пары уникальных                     157717        157717  да
+пары вхождений                     1004033       1004033  да
+тройки уникальных                  1116083       1116083  да
+тройки вхождений                   3872336       3872336  да
+распределение числа навыков                               да
+
+Полное сравнение таблиц (каждая строка и каждое число):
+  k=1: строк mapreduce=9219, duckdb=9219, расхождений: 0
+  k=2: строк mapreduce=157717, duckdb=157717, расхождений: 0
+  k=3: строк mapreduce=1116083, duckdb=1116083, расхождений: 0
+
+ИТОГ: результаты ПОЛНОСТЬЮ СОВПАДАЮТ
